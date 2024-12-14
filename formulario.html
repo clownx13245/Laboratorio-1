@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Titulo Principal</h1>
+    <h2>Subtitulos</h2>
+    <h3>Subtitulos de los subtitulos</h3>
+    <h4>otro titulo</h4>
+    <h5>otro titulo h5</h5>
+    <h6>ultimo titulo</h6>
+
+    <p>
+        <b>ipsum dolor sit,</b> amet consectetur adipisicing elit. Molestias sit optio laborum totam quia. Dolorem, corporis nobis cumque recusandae est incidunt accusamus quaerat repellat veritatis, aliquam, magni quod atque molestiae.
+    </p>
+
+    <!-- <i> es una etiqueta q coloca cursiva la letra </i> -->
+
+    <p>
+        <i>Lorem ipsum dolor sit</i> amet consectetur adipisicing elit. Autem, aspernatur quos. Ut, quisquam facere soluta excepturi optio recusandae odio ex ipsa fuga beatae at velit totam consequuntur accusantium, dolor perferendis.
+    </p>
+
+    <img src="./img/htmlImagen.png" alt="Es HTML">
+
+    <!-- crear lista -->
+
+    <!-- listas desrdenadas <ul> biñetas -->
+        <ul type="square">
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+            <li>Elemento de lista 4</li>
+        </ul>
+
+    <!-- listas orenadas <ol> numeros o letras en secuencias -->
+        <ol type="I">
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+            <li>Elemento de lista 4</li>
+        </ol>
+    <!-- listas por titulos <dl> -->
+   <dl>
+    <dt>Titulo de la lista</dt>
+    <dd>datos del titulo de dicha lista</dd>
+    <dd>datos del titulo de dicha lista222</dd>
+    <dt>Titulo 2</dt>
+    <dd>datos del titulo de dicha lista</dd>
+   </dl>
+
+   <!-- enlace a -->
+
+   <a href="https://cotecnova.edu.co/" target="_blank">Cotecnova</a>
+
+   <!-- le agrego un enlace con una imagen en vez de texto -->
+    <a href="https://www.inpec.gov.co/" target="_blank"><img src="./img/inpec.png" width="100px" height="100px" alt="INPEC"></a>
+    
+    <!-- parrafos, imagens y h1,h2, ...,h6 -->
+
+    <!-- Formularios tipos de inputs -->
+
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Mi Primer Formulario</legend>
+
+            <input type="radio" name="genero" id="" value="hombre"> Hombre
+            <input type="radio" name="genero" id="" value="mujer"> Mujer
+            <br>
+            <label for="nom">Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingrese el nombre" id="nom" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" placeholder="Ingrese el apellido" id="apellido" required>
+
+            <br>
+
+            <select name="pais" id="">
+                <option value="">Ingrese el Pais</option>
+                <option value="col">Colombia</option>
+                <option value="cand">Canada</option>
+                <option value="EU">Estados Unidos</option>
+            </select>
+
+            <br>
+
+            <label for="">Seleccione Deportes que practicas:</label><br>
+            <input type="checkbox" name="pasatiempo" id="" value="Futbool">Futbool
+            <input type="checkbox" name="pasatiempo" id="" value="Baseball">Baseball
+            <input type="checkbox" name="pasatiempo" id="" value="Basketball">Basketball
+            <input type="checkbox" name="pasatiempo" id="" value="Padel">Padel
+
+            <br>
+            <label for="">Seleccione un rango de edad</label>
+            <input type="range" name="edad" id="" min="0" max="100">
+
+            <br>
+
+            <label for="">Correo</label>
+            <input type="email" name="correo" id="">
+            <br>
+            <label for="">Numeros</label>
+            <input type="number" name="numero" id="">
+
+            <br>
+
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>

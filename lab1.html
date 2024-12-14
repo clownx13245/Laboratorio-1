@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #t1 {
+            color: red;
+        }
+
+        .l1 {
+            color: blue;
+            list-style-type: circle;
+        }
+
+        #l2 {
+            color: yellow;
+        }
+
+        .dep {
+            list-style-type: upper-roman;
+            font-weight: bold;
+        }
+
+        /* marker es para resaltar elementos */
+        .dep::marker {
+            color: green;
+        }
+
+        table, thead, th {
+            border: solid black 1px;
+        }
+
+        tbody, td {
+            border: solid, red 1px;
+        }
+
+        .nn {
+            font-weight: bold;
+        }
+
+        tbody tr:hover {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="t1">Ciudades De Colombia</h1>
+    <ol>
+        <li>Departamentos:</li>
+        <ol >
+            <li class="dep">Atlantilco</li>
+            <ul>
+                <li class="l1" id="l2">Barranquilla</li>
+                <li class="l1">Puerto Colombia</li>
+                <li class="l1">Malambo</li>
+            </ul>
+            <li class="dep">Valle del Cauca</li>
+            <ul>
+                <li class="l1" id="l3">Cali</li>
+                <li class="l1">Obando</li>
+                <li class="l1">Ulloa</li>
+            </ul>
+            <li class="dep">Magdalena</li>
+            <ul>
+                <li class="l1">Santa Marta</li>
+                <li class="l1">Cienaga</li>
+                <li class="l1">Fundacion</li>
+            </ul>
+        </ol>
+        <li>Barranquilla</li>
+        <li>Cartagena</li>
+        <li>Santa Marta</li>
+        <li>San Andres</li>
+        <li>Momposs</li>
+    </ol>
+
+    <h1>Equipos De Futbool</h1>
+
+    <ol>
+        <li>America de Mexico</li>
+        <li>Real Casanare</li>
+        <li>Aguilas Moradas</li>
+        <li>Valledupar F.C.</li>
+        <li>Los Rodillones</li>
+    </ol>
+
+    <!-- tabla -->
+     <table>
+        <thead>
+            <tr>
+                <th>Elemento 1</th>
+                <th>Elemento 2</th>
+                <th>Elemento 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dolares</td>
+                <td>$ 100.000</td>
+                <td>$ 40.000.000</td>
+            </tr>
+            <tr>
+                <td>Euros</td>
+                <td>$ 100.000</td>
+                <td>$ 50.000.000</td>
+            </tr>
+            <tr>
+                <td>Libras Estarlinas</td>
+                <td>$ 100.000</td>
+                <td>$ 70.000.000</td>
+            </tr>
+            <tr class="nn">
+                <td colspan="2">Total</td>
+                <td>$ 160.000.000</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>
